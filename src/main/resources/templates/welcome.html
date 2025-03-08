@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        /* Basic reset and styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #2c3e50;
+        }
+
+        p {
+            font-size: 20px;
+            color: #34495e;
+        }
+
+        .counter {
+            font-size: 24px;
+            color: #e74c3c;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 16px;
+            color: #34495e;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Welcome to my website!</h1>
+    <p>Thank you for visiting.</p>
+    <p class="counter">Visitor Count: <span th:text="${pageCount}"></span></p>
+    <div class="footer">
+        <p>Sahil Sharma | C0930789</p>
+    </div>
+</div>
+</body>
+</html>
